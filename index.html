@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="font-awesome" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Hamza Khalid</div>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('home')">Home</a></li>
+                <li><a onclick="scrollToSection('about')">About</a></li>
+                <li><a onclick="scrollToSection('skills')">Skills</a></li>
+                <li><a onclick="scrollToSection('services')">Services</a></li>
+                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <button class="cta-btn" onclick="scrollToSection('contact')">Get In Touch</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>
+                    Hi, I'm <span class="highlight">Hamza Khalid</span><br>
+                    Web Developer
+                </h1>
+                <p>
+                    I craft clean, responsive, and user-friendly websites that work beautifully across all devices.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('about')">Learn More About Me</button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="https://i.postimg.cc/DZC8DQzY/profile-pic-6.png" alt="Hamza Khalid" class="profile-img">
+                    <div class="experience-badge">
+                        8+<br><small>Months<br>Experience</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">My Journey</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Hi! I'm Hamza Khalid, a passionate and motivated front-end web developer with skills in HTML, CSS, JavaScript, and a strong foundation in programming fundamentals.
+                </p>
+                <p>
+                    I specialize in creating clean, responsive, and user-friendly websites that work across all devices. My goal is to bring ideas to life through code and create meaningful digital experiences.
+                </p>
+                <p>
+                    I'm always eager to learn new technologies and tackle challenging projects that push the boundaries of what's possible on the web.
+                </p>
+            </div>
+            
+               <div class="about-details">
+                <div class="education">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <p><strong>COMSATS University Islamabad</strong></p>
+                    <p>Began my Bachelor's degree in Software Engineering, diving into programming fundamentals, data structures, and software design principles.</p>
+                    <p>Jan 2022 – Feb 2026</p>
+                </div>
+                <div class="experience">
+                    <h3><i class="fas fa-briefcase"></i> First Industry Exposure</h3>
+                    <p><strong>Internship at Apps Genii</strong></p>
+                    <p>Gained hands-on experience in web development, working with HTML, CSS, and JavaScript. Learned about real-world project workflows and client requirements.</p>
+                    <p>Jul - Aug 2023 </p>
+                    <p>Jul - Aug 2024 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Semantic markup and modern HTML standards</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Responsive design and modern CSS techniques</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Dynamic functionality and interactive features</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first approach and cross-device compatibility</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">What I Offer</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Custom Website Development</h3>
+                <p>Build responsive, modern websites tailored to your specific needs and requirements.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Responsive Landing Pages</h3>
+                <p>Create engaging landing pages that convert visitors into customers across all devices.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bug"></i>
+                <h3>Front-End Bug Fixing</h3>
+                <p>Debug and fix issues in existing websites to improve performance and user experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="coming-soon">
+            <i class="fas fa-rocket"></i>
+            <h3>Projects Coming Soon</h3>
+            <p>I'm currently working on some exciting projects that will be showcased here soon. Stay tuned!</p>
+            <button class="btn-primary" onclick="scrollToSection('contact')" style="margin-top: 1rem;">Contact for Samples</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+     
+<section id="contact" class="section">
+  <h2 class="section-title">Get In Touch</h2>
+  <div class="contact-container">
+    <div class="contact-form">
+      <h3>Send me a message</h3>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="user_name">Name</label>
+          <input type="text" id="user_name" name="user_name" required />
+        </div>
+        <div class="form-group">
+          <label for="user_email">Email</label>
+          <input type="email" id="user_email" name="user_email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:hamzakhalid.se@gmail.com" target="_blank"><p>hamzakhalid.se@gmail.com</p></a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>+92 3034882277</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <div>
+          <h4>LinkedIn</h4>
+          <a href="www.linkedin.com/in/hamzakhaliddeveloper" target="_blank">
+            <p>linkedin.com/in/hamza-khalid-59b51428a</p>
+          </a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <div>
+          <h4>GitHub</h4>
+          <a href="https://github.com/hamzakhaliddeveloper" target="_blank">
+            <p>github.com/hamzakhaliddeveloper</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EmailJS Script -->
+<script>
+  (function () {
+    emailjs.init("public_n68uMdlbn3AyIiMmi"); // public key
+  })();
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm("service_6wddko9", "template_m1sw4pl", this)
+        .then(
+          function () {
+            alert("✅ Thank you for your message! I will get back to you soon.");
+            document.getElementById("contact-form").reset();
+          },
+          function (error) {
+            alert("❌ Failed to send message:\n" + JSON.stringify(error));
+          }
+        );
+    });
+</script>
+
+  
+      <!-- Footer -->
+      <footer class="footer">
+          <div class="social-links">
+              <a href="www.linkedin.com/in/hamzakhaliddeveloper" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/hamzakhaliddeveloper"><i class="fab fa-github" target="_blank"></i></a>
+              <a href="https://x.com/hamzakhalidrb?t=3TO7uYM4wcflC1ZYZLQMEw&s=09"><i class="fab fa-twitter" target="_blank"></i></a>
+               <!-- <a href="#"><i class="fab fa-Gmail"></i></a> -->
+              <!-- <a href="https://www.facebook.com/share/16ykcFozpF/" target="_blank"><i class="fab fa-facebook"></i></a> -->
+          </div>
+          <p>&copy; 2025 All rights reserved.</p>
+      </footer>
+  
+      <script>
+          // Smooth scrolling function
+          function scrollToSection(sectionId) {
+              const element = document.getElementById(sectionId);
+              if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+              }
+          }
+  
+          // Navbar scroll effect
+          window.addEventListener('scroll', function() {
+              const navbar = document.getElementById('navbar');
+              if (window.scrollY > 50) {
+                  navbar.classList.add('scrolled');
+              } else {
+                  navbar.classList.remove('scrolled');
+              }
+          });
+  
+        //   Form submission
+          document.querySelector('form').addEventListener('submit', function(e) {
+              e.preventDefault();
+              alert('Thank you for your message! I will get back to you soon.');
+              this.reset();
+          });
+  
+          // Add smooth entrance animations
+          window.addEventListener('load', function() {
+              const observerOptions = {
+                  threshold: 0.1,
+                  rootMargin: '0px 0px -50px 0px'
+              };
+  
+              const observer = new IntersectionObserver(function(entries) {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          entry.target.style.opacity = '1';
+                          entry.target.style.transform = 'translateY(0)';
+                      }
+                  });
+              }, observerOptions);
+  
+              const animatedElements = document.querySelectorAll('.skill-card, .service-card, .contact-item');
+              animatedElements.forEach(el => {
+                  el.style.opacity = '0';
+                  el.style.transform = 'translateY(20px)';
+                  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                  observer.observe(el);
+              });
+          });
+      </script>
+  </body>
+  </html>
+ 
+ 
+
+
+
